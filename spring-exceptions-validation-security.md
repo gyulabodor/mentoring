@@ -22,10 +22,23 @@
 
    - **@RestControllerAdvice:** Almost the same as simple ControllerAdvice, but it throws exceptions with details put into ResponseBody.
 
-   - :exclamation: if you are using `@ControllerAdvice` then `GlobalExceptionHandler` should extend `ResponseEntityExceptionHandler` to work well with RESTApi
+   - :exclamation: if you are using `@ControllerAdvice` then `GlobalExceptionHandler` should extend `ResponseEntityExceptionHandler` to be able to render exception into ResponseBody.
 
 3. Create custom exception class which extends `Exception` eg.: `NotFoundException.java`
 4. Define at least 1 `@ExceptionHandler` function in `GlobalExceptionHandler` class.
    - Check my project code
 
 ## Bean Validation
+
+- <ins>Bean validation means:</ins> validate Request DTO properties with constraint annotations like `@NotBlank()` `@NotNull()` `@Size()` `@PositiveOrZero()`
+
+  > :warning: Take care about constraints imports
+  >
+  > - :white_check_mark: import jakarta.validation.constraints.\*
+  > - :white_check_mark: import javax.validation.constraints.\*
+
+- <ins>Custom validation error messages:</ins>
+   - Create a `messages.properties` file
+   - Add needed props and messages to it
+   - Server restart/Buildet futtatni 
+   -
