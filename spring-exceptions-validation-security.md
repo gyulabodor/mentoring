@@ -19,11 +19,13 @@
 2. Add `@ControllerAdvice` or `@RestControllerAdvice` annotation on your `GlobalExceptionHandler` class.
 
    - **@ControllerAdvice:** make your class a global exception handler in the app, can throw simple custom serverside-rendered templates/error page htmls.
+
    - **@RestControllerAdvice:** Almost the same as simple ControllerAdvice, but it throws exceptions with details put into ResponseBody.
 
+   - :exclamation: if you are using `@ControllerAdvice` then `GlobalExceptionHandler` should extend `ResponseEntityExceptionHandler` to work well with RESTApi
+
 3. Create custom exception class which extends `Exception` eg.: `NotFoundException.java`
-4. Define at least `@ExceptionHandler` on in `GlobalExceptionHandler` class.
-   - Check my project code exmaple
-5. Szövegezés
+4. Define at least 1 `@ExceptionHandler` function in `GlobalExceptionHandler` class.
+   - Check my project code
 
 ## Bean Validation
