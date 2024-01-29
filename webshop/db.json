@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "tv",
+            "category": "electronics",
+            "price": 250
+        },
+        {
+            "id": 2,
+            "name": "spoon",
+            "category": "kitchen",
+            "price": 30
+        },
+        {
+            "id": 3,
+            "name": "T-shirt",
+            "category": "cloth",
+            "price": 67
+        }
+    ]
+}

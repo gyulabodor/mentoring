@@ -1,0 +1,7 @@
+<div class="product-card" *ngIf="product">
+    <p>sorszam: {{product.id}}</p>
+    <p>nev: {{product.name}}</p>
+    <p>cat: {{product.category}}</p>
+    <p>ár: {{product.price}} $</p>
+    <button (click)="openProductDetails(product.id)">Részletek</button>
+</div>

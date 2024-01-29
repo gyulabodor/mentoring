@@ -1,0 +1,18 @@
+<p>product-list works!</p>
+<ng-container *ngIf="productList">
+    <product-card class="product-card" *ngFor="let productItem of productList" 
+        [product]="productItem"
+        (openDetailsEvent)="openDetails($event)"
+    >
+    </product-card>
+</ng-container>
+
+
+<h2>REAKTÍV VALTOZAT</h2>
+<ng-container *ngIf="productList$ | async as productList">
+    <product-card class="product-card" *ngFor="let productItem of productList" 
+        [product]="productItem"
+        (openDetailsEvent)="openDetails($event)"
+    >
+    </product-card>
+</ng-container>
