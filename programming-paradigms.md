@@ -14,4 +14,4 @@
     - [Thinking Reactively: Most Difficult (video)](https://www.youtube.com/watch?v=-4cwkHNguXE)  !!!!
     - [Angular reactive blogposts](https://blog.briebug.com/frontend)
         - [staying-functional-and-reactive-with-angular-data-services](https://blog.briebug.com/blog/staying-functional-and-reactive-with-angular-data-services)
-        - [using-rxjs-to-write-functional-javascript](https://blog.briebug.com/blog/using-rxjs-to-write-functional-javascript)
+        - [using-rxjs-to-write-functional-jax0vascript](https://blog.briebug.com/blog/using-rxjs-to-write-functional-javascript)

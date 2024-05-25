@@ -1,0 +1,19 @@
+{
+  "product" : [
+    {
+      "id": 1,
+      "name": "4k UHD SAMSUNG TV",
+      "price": 200
+    },
+    {
+      "id": 2,
+      "name": "XBOX SERIES-S",
+      "price": 300
+    },
+    {
+      "id": 3,
+      "name": "IPHONE 14",
+      "price": 600
+    }
+  ]
+}
